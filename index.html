@@ -35,24 +35,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Bookmarker</a>
+                <a class="navbar-brand"><span class="glyphicon glyphicon-bookmark"></span> Bookmarker</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Featured</a>
+                        <a href="#home">Featured</a>
                     </li>
                     <li>
-                        <a href="#">Category</a>
+                        <a href="#categories">Category</a>
                     </li>
                     <li>
-                        <a href="#">Search</a>
+                        <a href="#search">Search</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Shopping Cart</a>
+                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success"> 3</span></a>
                     </li>
                 </ul>
             </div>
@@ -63,27 +63,23 @@
 
     <!-- Page Content -->
     <div class=container-fluid id=home>
-        <h2 class="text-center">FEATURED</h2>
+        <h2 class="text-center">Featured</h2>
         <h4 class="text-center">Check out the hottest books.</h4>
         <div class="container text-center sample">
             <div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <img class="carousel-pic" style="display: inline-block" src="images/dracula.jpg" />
+                        <a id="1yLDAgAAQBAJ" class="bookLinks">
+                            <img class="carousel-pic" style="display: inline-block" src="http://books.google.com/books/content?id=1yLDAgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72cWpt0L9G2YhbSWtcDA_k2uafv3VlycWt_KwYOXvX8X0-KKLRI_flFiDwxCJL2UgRKNS4aGwI4MgYOti8unAl__qeT3G2caltFz7ifodsqifC_GZj5-fgeboLaoxe8gFlXp9D8&source=gbs_api"
+                            />
+                        </a>
                         <div>
                             <h3>DRACULA</h3>
                             <h4>By: Bram Stocker</h4>
                             <p>A gothic tale for the ages. Enter into the world of Count Dracula.
                             </p>
-                            <div class="ratings">
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
+                            <a id="1yLDAgAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
+                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>
@@ -91,21 +87,15 @@
             <div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <img class="carousel-pic" style="display: inline-block" src="images/got.jpg" />
+                        <a id=5NomkK4EV68C class="bookLinks"><img class="carousel-pic" style="display: inline-block" src="http://books.google.com/books/content?id=5NomkK4EV68C&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70L-fQfyYSUAUfVcVO1IZVEP1C59o19Ni9jitehni9Gck8rnG1j_A5_FJITYfVvygU8IXoxI_hFldbvwzMkfmE645o_2qq0QrR9cY2JvbYHkmVz3H9sOu1jJ-e75AOCBJCmTAKm&source=gbs_api"
+                            /></a>
                         <div>
                             <h3>GAME OF THRONES</h3>
                             <h4>By: George RR Martin</h4>
                             <p>A realm of epic porportions. Dragons, knights, kings and undead, all fight in a game of thrones.
                             </p>
-                            <div class="ratings">
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
+                            <a id="5NomkK4EV68C" class="btn btn-primary bookLinks">See Details</a>
+                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>
@@ -113,21 +103,15 @@
             <div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <img class="carousel-pic" style="display: inline-block" src="images/1984.jpg" />
+                        <a id=uyr8BAAAQBAJ class=bookLinks><img class="carousel-pic" style="display: inline-block" src="http://books.google.com/books/content?id=uyr8BAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72k2G2Fz1ENOl2JyPS-FffKbL_iYCX_qDRf4HuIvqg_1CAjbxHdRRO1qshm2b4kNU9YDyKDhktye1fQCLn_DKPPW0tfOX0fWTOQtk4NsDdP-IaW4w2vwR97Ig9f1gqNjZyOdjW_&source=gbs_api"
+                            /></a>
                         <div>
                             <h3>1984</h3>
                             <h4>By: George Orwell</h4>
                             <p>Welcome to 1984. A world where Big Brother controls you, and you don't even know it.
                             </p>
-                            <div class="ratings">
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
+                            <a id="uyr8BAAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
+                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>
@@ -136,86 +120,64 @@
 
 
         <div class="row">
-            <h2 class=text-center>BEST SELLERS</h2>
+            <h2 class=text-center>Best Sellers</h2>
             <h4 class=text-center>The big leagues.</h4>
-            <div class="col-sm-3 col-lg-3 col-md-3">
+            <div class="col-sm-3 col-md-3">
                 <div class="thumbnail">
-                    <img class="thumbnail-pic" src="images/tkmb.jpg">
+                    <a id=HBtJCgAAQBAJ class=bookLinks><img class="thumbnail-pic" src="http://books.google.com/books/content?id=HBtJCgAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70HjFUvznzrnzKwHdZm0vClvrMNEE0ealSbvyst59yL-A27RqkNHM6nxBmYnH5hUYLoSM21gHy1rV8IY6TwAn49MEKDySM8hVkR-9dJH11W33vGDF3kBsIM-PbTGVLYVrsXZ7LV&source=gbs_api">
+                    </a>
                     <div>
                         <h4>To Kill a Mocking Bird
                         </h4>
-                        <h4>$9.99</h4>
+                        <h4>$4.99</h4>
 
                     </div>
-                    <div class="ratings">
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </p>
-                    </div>
+                    <a id="HBtJCgAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
+                    <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3 col-md-3">
+            <div class="col-sm-3 col-md-3">
                 <div class="thumbnail">
-                    <img class="thumbnail-pic" src="images/giver.jpg">
+                    <a id=Coi9AwAAQBAJ class=bookLinks><img class="thumbnail-pic" src="http://books.google.com/books/content?id=Coi9AwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71rns0U20fzywrcFEXBk33nN0iohMKKPI8IanQ6uF0Anw1cF-_qhgZBvjpjGmuVJw-s5uaLFZUU0WvZ2kudtMOIWBLG0E1zmfRV9UOnOD115ulNIv45QZYUTf4UyXBOUJj5ze1a&source=gbs_api">
+                    </a>
                     <div>
                         <h4>The Giver
                         </h4>
-                        <h4>$11.99</h4>
+                        <h4>$4.99</h4>
 
                     </div>
-                    <div class="ratings">
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </p>
-                    </div>
+                    <a id="Coi9AwAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
+                    <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3 col-md-3">
+            <div class="col-sm-3 col-md-3">
                 <div class="thumbnail">
-                    <img class="thumbnail-pic" src="images/alchemist.jpg" alt="" />
+                    <a id=FzVjBgAAQBAJ class=bookLinks><img class="thumbnail-pic" src="http://books.google.com/books/content?id=FzVjBgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE7320LE0PH7d3kQBHkczjE0o3VIoVdfBu9KqeFk1jeHE7QdF0o3m7jT9-l_VbDniO74K350MPTCW7Lp66tKKcoMxakzlxzB8x-8jpsXBYJOgbvtGQGpzunaUVUZfPUp_rQG5Qf89&source=gbs_api"
+                            alt="" />
+                    </a>
                     <div>
 
                         <h4>The Alchemist
                         </h4>
-                        <h4>$7.99</h4>
+                        <h4>$11.99</h4>
                     </div>
-                    <div class="ratings">
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </p>
-                    </div>
+                    <a id="FzVjBgAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
+                    <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3 col-md-3">
+            <div class="col-sm-3 col-md-3">
                 <div class="thumbnail">
-                    <img class="thumbnail-pic" src="images/7habits.jpg" alt="" />
+                    <a id=upUxaNWSaRIC class=bookLinks><img class="thumbnail-pic" src="http://books.google.com/books/content?id=upUxaNWSaRIC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72hdX_sP-t1oyZC6bhDFUNh5ouuUkLf8c-pqBIojAKVglMTMdid0YuhQrpIikObNC683PN_kEdIGLa5EAtJvuRTEtp1MJ9pssRaiI-c6PGRfQFrqTjikqPNSPQlhwQU0dMH2_9L&source=gbs_api"
+                            alt="" />
+                    </a>
                     <div>
-                        <h4>7 Habits of Highly Effective People
+                        <h4>7 Habits of Effective People
                         </h4>
-                        <h4>$14.99</h4>
+                        <h4>$4.99</h4>
 
                     </div>
-                    <div class="ratings">
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </p>
-                    </div>
+                    <a id="upUxaNWSaRIC" class="btn btn-primary bookLinks">See Details</a>
+                    <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
         </div>
@@ -256,6 +218,7 @@
             </div>
         </div>
         <div id=categoryResult>
+            <p class="lead text-center" style="padding:10px;">Click a category above to see results.
         </div>
     </div>
 
@@ -265,24 +228,74 @@
         <div class="container text-center">
             <div class="col-lg-12">
                 <div class="input-group add-on">
-                    <input class="form-control" placeholder="Search by Author or Title" name="srch-term" id="searchForm" type="text">
+                    <input class="form-control" placeholder="Search by Author, Title or Subject!" name="srch-term" id="searchForm" type="text">
                     <div class="input-group-btn">
                         <button class="btn btn-default" id="submit"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="searchResults"></div>
+        <div id="searchResults">
+            <p class="lead text-center" style="padding:10px;">Type something in the bar above to see results.
+            </p>
+        </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Shopping Cart</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dracula</td>
+                                <td>Bram Stocker</td>
+                                <td>$4.99</td>
+                                <td>1</td>
+                                <td><button type="button" class="btn btn-primary btn-xs">+</button></td>
+                                <td><button type="button" class="btn btn-danger btn-xs">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>Game Of Thrones</td>
+                                <td>George RR Martin</td>
+                                <td>$12.99</td>
+                                <td>1</td>
+                                <td><button type="button" class="btn btn-primary btn-xs">+</button></td>
+                                <td><button type="button" class="btn btn-danger btn-xs">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>A Brief History of Time</td>
+                                <td>Stphen Hawkings</td>
+                                <td>$4.99</td>
+                                <td>1</td>
+                                <td><button type="button" class="btn btn-primary btn-xs">+</button></td>
+                                <td><button type="button" class="btn btn-danger btn-xs">-</button></td>
 
 
-
-    <!--<div class="container-fluid" id=footer>
-        <footer>
-            <p>Copyright &copy; Zarif Shahriar</p>
-        </footer>
-    </div>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <a href="checkout.html" class="btn btn-default btn-success">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery -->
@@ -292,8 +305,6 @@
     <!-- Custom JavaScript -->
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
-
-
 
 
 </body>

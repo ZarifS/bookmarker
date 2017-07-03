@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     // Setting up listeners 
-
+    setBindings();
     //Book links to open new pages
     $('body').on('click', 'a.bookLinks', function() {
         console.log("Clicked a book Link");
@@ -27,6 +27,28 @@ $(document).ready(function() {
         getBooksBySearch(search, 10);
     });
 });
+
+function setBindings() {
+    if ($(window).width() < 767) {
+        $("nav a").click(function(e) {
+            e.preventDefault();
+            //this.className +=" active";
+            var sectionID = e.currentTarget.hash;
+            $('html, body').animate({
+                scrollTop: $(sectionID).offset().top - 250
+            }, 1000);
+        });
+    } else {
+        $("nav a").click(function(e) {
+            e.preventDefault();
+            //this.className +=" active";
+            var sectionID = e.currentTarget.hash;
+            $('html, body').animate({
+                scrollTop: $(sectionID).offset().top - 50
+            }, 1000);
+        });
+    }
+}
 
 //Key for Google Books API
 var key = 'AIzaSyAm9iY2lu-PTDd4gbFu7byI5b5MMlBYsWM';
@@ -53,10 +75,15 @@ function getBooksByCategory(categories, limit) {
                 '<tr><th scope="row">' + i + '</th>' +
                 '<td><a class=bookLinks id=' + id + '>' + title + '</a></td>' +
                 '<td>' + author + '</td>' +
-                '<td>' + rating + '</tr>'
+                '<td>' + rating + '</td>' +
+                '<td><button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-shopping-cart"></span></button></td></tr>'
             )
         }, this);
     });
+
+    $('html, body').animate({
+        scrollTop: $("#categoryResult").offset().top - 100
+    }, 1000);
 }
 
 function getBooksBySearch(search, limit) {
@@ -84,8 +111,12 @@ function getBooksBySearch(search, limit) {
                 '<tr><th scope="row">' + i + '</th>' +
                 '<td><a class=bookLinks id=' + id + '>' + title + '</a></td>' +
                 '<td>' + author + '</td>' +
-                '<td>' + rating + '</tr>'
+                '<td>' + rating + '</td>' +
+                '<td><button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-shopping-cart"></span></button></td></tr>'
             )
         }, this);
     });
+    $('html, body').animate({
+        scrollTop: $("#searchResults").offset().top - 100
+    }, 1000);
 }

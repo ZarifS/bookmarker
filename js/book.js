@@ -27,8 +27,10 @@ function getBookInfoByID(id) {
         images = book.imageLinks;
         if (images.medium) {
             imageLink = images.medium;
-        } else {
+        } else if (images.small) {
             imageLink = images.small;
+        } else if (images.thumbnail) {
+            imageLink = images.thumbnail;
         }
         desc = book.description;
         author = book.authors[0];
@@ -36,7 +38,7 @@ function getBookInfoByID(id) {
         title = book.title;
         moreInfo = book.infoLink;
         if (book.averageRating) {
-            rating = book.averageRating;
+            rating = book.averageRating + "/5";
         } else rating = "N/A"
         if (data.saleInfo.retailPrice) {
             price = data.saleInfo.retailPrice.amount;

@@ -15,12 +15,3 @@ body {
 #cart {
     color: rgb(45, 45, 45);
 }
-
-.bookImage {
-    width: 360px;
-    max-height: 500px;
-}
-
-.text-justify {
-    text-align: justify;
-}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Checkout</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-bookmark"></span> Bookmarker</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html#home">Featured</a>
+                    </li>
+                    <li>
+                        <a href="index.html#categories">Category</a>
+                    </li>
+                    <li>
+                        <a href="index.html#search">Search</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success"> 3</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Order Summary-->
+    <div class=container>
+        <!--<div class=row>-->
+        <!--<div class=col-md-6>
+                <h3>Items</h3>
+                <hr>
+                <table class="table table-inverse">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dracula</td>
+                            <td>Bram Stocker</td>
+                            <td>$4.99</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Game Of Thrones</td>
+                            <td>George RR Martin</td>
+                            <td>$12.99</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>A Brief History of Time</td>
+                            <td>Stphen Hawkings</td>
+                            <td>$4.99</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>-->
+        <div class=col-md-12>
+            <h3 class=text-center>Order Summary</h3>
+            <table class="table table-inverse">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Subtotal</th>
+                        <th>Shipping/Taxes</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dracula, Stoker</td>
+                        <td>$4.99</td>
+                        <td>$3.75</td>
+                        <td>$7.74</td>
+                    </tr>
+                    <tr>
+                        <td>A brief history of time, Hawkings</td>
+                        <td>$4.99</td>
+                        <td>$3.75</td>
+                        <td>$7.74</td>
+                    </tr>
+                    <tr>
+                        <td>Game of Thrones, Martin</td>
+                        <td>$12.99</td>
+                        <td>$7.75</td>
+                        <td>$19.74</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 class=text-center>Total: $35.22</h4>
+        </div>
+        <!--</div>-->
+    </div>
+
+    <!-- User Information-->
+    <div class=container>
+        <!--row-->
+        <div class="row">
+            <!-- Contact Information-->
+            <div class="col-md-6">
+                <h3>Contact Information</h3>
+                <hr>
+                <form name="registration_form" id='registration_form' class="form-inline form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="firstname">First Name:</label>
+                            <input id="firstname" class="form-control input-group-lg reg_name" type="text" name="firstname" title="Enter first name" placeholder="First name" />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="lastname">Last Name:</label>
+                            <input id="lastname" class="form-control input-group-lg reg_name" type="text" name="lastname" title="Enter last name" placeholder="Last name" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Email">Email:</label>
+                            <input id="Email" class="form-control input-group-lg reg_name" type="text" name="Email" title="Enter Email" placeholder="Email" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Shipping Information-->
+            <div class=col-md-6>
+                <h3>Shipping Information</h3>
+                <hr>
+                <form name="shipping_form" id="shipping_form" class="form-inline form-group">
+                    <div class=row>
+                        <div class=col-md-4>
+                            <label for="address">Address:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Address" />
+                        </div>
+                        <div class=col-md-4>
+                            <label for="address">Address Line 2:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Optional" />
+                        </div>
+                        <div class=col-md-4>
+                            <label for="address">City:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="City" />
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class=col-md-4>
+                            <label for="address">State/Province:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="State/Province" />
+                        </div>
+                        <div class=col-md-4>
+                            <label for="address">Zip/Postal Code:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Zip/Postal Code" />
+                        </div>
+                        <div class=col-md-4>
+                            <label for="address">Country:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Country" />
+                        </div>
+                    </div>
+                </form>
+                <p>Shipping will usually take 3-5 business days.</p>
+            </div>
+        </div>
+
+        <!-- Payment Information-->
+
+        <form class="form-inline">
+            <h3>Payment Information</h3>
+            <hr>
+            <div class="row">
+                <div class=col-md-3>
+                    <label for="Card Number">Card Number:</label>
+                    <input id="Card Number" class="form-control input-group-lg reg_name" type="text" name="Card Number" title="Enter Card Number" placeholder="Card Number" />
+                    <img style="display:inline;" src="assets/img/creditcardlogos.png" height=3 0px width=1 00px>
+                </div>
+                <div class=col-md-3>
+                    <label for="CCV">CCV Number:</label>
+                    <input id="CVV" class="form-control input-group-lg reg_name" type="text" name="CVV" title="Enter CVV" placeholder="CVV" />
+                    <img style="display:inline;" src="assets/img/cvv.png" height=3 0px width=5 0px>
+                </div>
+                <div class=col-md-3>
+                    <label for="ExpiryDate">Card Expiry Month:</label>
+                    <input id="ExpiryDate" class="form-control input-group-lg reg_name" type="number" name="ExpiryDate" title="Enter Expiry" placeholder="MM" />
+                </div>
+                <div class=col-md-3>
+                    <label for="ExpiryDate">Card Expiry Year:</label>
+                    <input id="ExpiryDate" class="form-control input-group-lg reg_name" type="number" name="ExpiryDate" title="Enter Expiry" placeholder="YYYY" />
+                </div>
+            </div>
+        </form>
+
+        <!-- Confirmation -->
+        <div class=text-center>
+            <h3><strong>Confirmation</strong></h3>
+            <hr>
+            <label class="checkbox-inline"><input type="checkbox" value="">I have verified the above information as accurate and agree to the terms and conditions of Bookmarker.</label>
+            <hr>
+            <div class=text-center>
+                <button type="button" class="btn btn-danger">CANCEL</button>
+                <button type="button" class="btn btn-success">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

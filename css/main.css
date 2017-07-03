@@ -6,12 +6,13 @@
 
 html,
 body {
+    background-color: rgb(26, 26, 26);
     height: 100%;
     margin: 0;
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 80px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -64,13 +65,14 @@ body {
 #categories {
     /*background-image: url("../images/pastel5.jpg");*/
     background-color: rgb(239, 239, 239);
+    min-height: 300px;
 }
 
 #home {
     color: rgb(239, 239, 239);
     min-height: 50%;
     /*background-image: url("../images/dark-smoke.png");*/
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(26, 26, 26);
     background-position: fill;
 }
 
@@ -79,6 +81,7 @@ body {
     /*background-image: url("../images/color18.jpg");*/
     background-color: rgb(26, 26, 26);
     padding: 30px;
+    min-height: 250px;
 }
 
 #footer {

@@ -31,24 +31,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Bookmarker</a>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-bookmark"></span> Bookmarker</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Featured</a>
+                        <a href="index.html#home">Featured</a>
                     </li>
                     <li>
-                        <a href="#">Category</a>
+                        <a href="index.html#categories">Category</a>
                     </li>
                     <li>
-                        <a href="#">Search</a>
+                        <a href="index.html#search">Search</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Shopping Cart</a>
+                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success"> 3</span></a>
                     </li>
                 </ul>
             </div>
@@ -57,6 +57,7 @@
         <!-- /.container -->
     </nav>
 
+    <!-- All of this gets filled in book.js-->
     <div class="container text-center" id=bookInformation>
         <div class=row>
             <div class="col-lg-4">
@@ -66,6 +67,7 @@
             <div class="col-lg-8">
                 <div id=bookTitle>
                 </div>
+                <hr>
                 <div id=author>
                 </div>
                 <div id=description></div>
@@ -73,6 +75,63 @@
                     <div id=rating class=col-sm-4></div>
                     <div id=price class=col-sm-4></div>
                     <div id=pageCount class=col-sm-4></div>
+                </div>
+                <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Shopping Cart</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dracula</td>
+                                <td>Bram Stocker</td>
+                                <td>$4.99</td>
+                                <td>1</td>
+                                <td><button type="button" class="btn btn-primary btn-xs">+</button></td>
+                                <td><button type="button" class="btn btn-danger btn-xs">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>Game Of Thrones</td>
+                                <td>George RR Martin</td>
+                                <td>$12.99</td>
+                                <td>1</td>
+                                <td><button type="button" class="btn btn-primary btn-xs">+</button></td>
+                                <td><button type="button" class="btn btn-danger btn-xs">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>A Brief History of Time</td>
+                                <td>Stphen Hawkings</td>
+                                <td>$4.99</td>
+                                <td>1</td>
+                                <td><button type="button" class="btn btn-primary btn-xs">+</button></td>
+                                <td><button type="button" class="btn btn-danger btn-xs">-</button></td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <a href="checkout.html" class="btn btn-default btn-success">Checkout</a>
                 </div>
             </div>
         </div>

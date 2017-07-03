@@ -7,7 +7,7 @@ body {
 body {
     padding-top: 80px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(26, 26, 26);
     color: rgb(239, 239, 239);
     padding-bottom: 30px;
 }

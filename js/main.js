@@ -91,7 +91,7 @@ function getBooksBySearch(search, limit) {
         var items = data.items;
         console.log(items);
         $("#searchResults").html(
-            '<h2 class="text-center">Search Results</h2>' +
+            '<h3 class="text-center">Search Results</h3>' +
             '<table class="table table-inverse">' +
             '<thead><tr><th>#</th><th>Title</th><th>Author</th><th>Average Rating</th></tr></thead>' +
             '<tbody id="search-table"></tbody></table>'

@@ -16,6 +16,11 @@ $(document).ready(function() {
     };
     var id = getUrlParameter('id');
     getBookInfoByID(id);
+    $('.related').slick({
+        autoplay: true,
+        dots: true,
+        infinite: true,
+    });
 });
 
 var key = 'AIzaSyAm9iY2lu-PTDd4gbFu7byI5b5MMlBYsWM';

@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding-top: 80px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.bookImage {
+    width: 360px;
+    max-height: 550px;
+}
+
+.text-justify {
+    text-align: justify;
+}

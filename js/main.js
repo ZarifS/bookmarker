@@ -26,6 +26,9 @@ $(document).ready(function() {
         var search = $('#searchForm').val();
         getBooksBySearch(search, 10);
     });
+    $('body').on('click', '.glyphicon-shopping-cart', function() {
+        alert("Added to Cart!");
+    });
 });
 
 function setBindings() {

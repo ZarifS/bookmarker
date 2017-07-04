@@ -9,9 +9,18 @@ body {
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: rgb(26, 26, 26);
     color: rgb(239, 239, 239);
+}
+
+#confirmation {
     padding-bottom: 30px;
 }
 
-#cart {
+#cart,
+#help {
     color: rgb(45, 45, 45);
+}
+
+footer {
+    color: rgb(26, 26, 26);
+    background-color: rgb(239, 239, 239);
 }

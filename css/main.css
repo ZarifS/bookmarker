@@ -84,9 +84,9 @@ body {
     min-height: 250px;
 }
 
-#footer {
-    background-image: url("../images/light.jpg");
-    background-position: center;
+footer {
+    color: rgb(26, 26, 26);
+    background-color: rgb(239, 239, 239);
 }
 
 

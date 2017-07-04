@@ -51,7 +51,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success"> 3</span></a>
+                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success" id=cartBadge> 3</span></a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
                 <hr>
                 <div id=author>
                 </div>
-                <div id=description></div>
+                <div id=description class=text-justify></div>
                 <div class=row>
                     <div id=rating class=col-sm-4></div>
                     <div id=price class=col-sm-4></div>
@@ -139,7 +139,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- Modal -->
@@ -198,6 +197,27 @@
         </div>
     </div>
 
+    <!-- Modal for Help -->
+    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Help</h4>
+                </div>
+                <div class="modal-body">
+                    <p class=lead>How to use this website:</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -206,5 +226,12 @@
     <script src="js/slick.js"></script>
     <script src="js/book.js"></script>
 </body>
+
+<footer>
+    <div class=container-fluid style=padding:20px;>
+        <p class="text-center">Bookmarker &copy; 2017 &nbsp | &nbsp All Rights Reserved &nbsp | &nbsp <a data-toggle="modal" data-target=#help>Help</a> &nbsp | &nbsp 24-7 Support at 1800-BOOKMARK &nbsp | &nbsp Email us: Bookmarker@help.com
+        </p>
+    </div>
+</footer>
 
 </html>

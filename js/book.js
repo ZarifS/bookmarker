@@ -21,6 +21,14 @@ $(document).ready(function() {
         dots: true,
         infinite: true,
     });
+    $('body').on('click', '.glyphicon-shopping-cart', function() {
+        alert("Added to Cart!");
+    });
+    $('body').on('click', 'a.bookLinks', function() {
+        console.log("Clicked a book Link");
+        var id = $(this).attr('id');
+        window.open("book.html?id=" + id);
+    });
 });
 
 var key = 'AIzaSyAm9iY2lu-PTDd4gbFu7byI5b5MMlBYsWM';

@@ -14,8 +14,13 @@ body {
     padding-bottom: 30px;
 }
 
+.label {
+    font-size: 100%;
+}
+
 #cart,
-#help {
+#help,
+#addToCart {
     color: rgb(45, 45, 45);
 }
 

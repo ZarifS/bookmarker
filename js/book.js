@@ -21,9 +21,9 @@ $(document).ready(function() {
         dots: true,
         infinite: true,
     });
-    $('body').on('click', '.glyphicon-shopping-cart', function() {
-        alert("Added to Cart!");
-    });
+    // $('body').on('click', '.glyphicon-shopping-cart', function() {
+    //     alert("Added to Cart!");
+    // });
     $('body').on('click', 'a.bookLinks', function() {
         console.log("Clicked a book Link");
         var id = $(this).attr('id');
@@ -52,7 +52,7 @@ function getBookInfoByID(id) {
         moreInfo = book.infoLink;
         if (book.averageRating) {
             rating = book.averageRating + "/5";
-        } else rating = "N/A"
+        } else rating = "3/5"
         if (data.saleInfo.retailPrice) {
             price = data.saleInfo.retailPrice.amount;
             currency = data.saleInfo.retailPrice.currencyCode;

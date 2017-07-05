@@ -11,6 +11,10 @@ body {
     color: rgb(239, 239, 239);
 }
 
+.label {
+    font-size: 100%;
+}
+
 #confirmation {
     padding-bottom: 30px;
 }

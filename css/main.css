@@ -16,6 +16,10 @@ body {
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.label {
+    font-size: 100%;
+}
+
 
 /*Slick CSS Changes*/
 
@@ -49,6 +53,8 @@ body {
 .thumbnail {
     text-align: center;
     color: rgb(239, 239, 239);
+    border: none;
+    padding-top: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     width: auto;
     min-height: auto;

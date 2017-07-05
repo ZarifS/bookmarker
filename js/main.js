@@ -26,9 +26,9 @@ $(document).ready(function() {
         var search = $('#searchForm').val();
         getBooksBySearch(search, 10);
     });
-    $('body').on('click', '.glyphicon-shopping-cart', function() {
-        alert("Added to Cart!");
-    });
+    // $('body').on('click', '.glyphicon-shopping-cart', function() {
+    //     alert("Added to Cart!");
+    // });
 });
 
 function setBindings() {
@@ -72,14 +72,14 @@ function getBooksByCategory(categories, limit) {
             id = (book.id);
             rating = (book.volumeInfo.averageRating)
             if (!rating) {
-                rating = "-";
+                rating = "3";
             }
             $("#category-table").append(
                 '<tr><th scope="row">' + i + '</th>' +
                 '<td><a class=bookLinks id=' + id + '>' + title + '</a></td>' +
                 '<td>' + author + '</td>' +
-                '<td>' + rating + '</td>' +
-                '<td><button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-shopping-cart"></span></button></td></tr>'
+                '<td>' + rating + '/5</td>' +
+                '<td><button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target=#addToCart><span class="glyphicon glyphicon-shopping-cart"></span></button></td></tr>'
             )
         }, this);
     });
@@ -108,14 +108,14 @@ function getBooksBySearch(search, limit) {
             id = (book.id);
             rating = (book.volumeInfo.averageRating)
             if (!rating) {
-                rating = "-";
+                rating = "3";
             }
             $("#search-table").append(
                 '<tr><th scope="row">' + i + '</th>' +
                 '<td><a class=bookLinks id=' + id + '>' + title + '</a></td>' +
                 '<td>' + author + '</td>' +
-                '<td>' + rating + '</td>' +
-                '<td><button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-shopping-cart"></span></button></td></tr>'
+                '<td>' + rating + '/5</td>' +
+                '<td><button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target=#addToCart><span class="glyphicon glyphicon-shopping-cart"></span></button></td></tr>'
             )
         }, this);
     });

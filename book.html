@@ -51,7 +51,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success" id=cartBadge> 3</span></a>
+                        <a data-toggle="modal" data-target=#cart><span class="label label-success"><span class="glyphicon glyphicon-shopping-cart"></span> 3</span></a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
                     <div id=price class=col-sm-4></div>
                     <div id=pageCount class=col-sm-4></div>
                 </div>
-                <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target=#addToCart><span class="glyphicon glyphicon-shopping-cart"></span></button>
             </div>
         </div>
     </div>
@@ -101,7 +101,7 @@
                             <p>A gothic tale for the ages. Enter into the world of Count Dracula.
                             </p>
                             <a id="1yLDAgAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
-                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target=#addToCart><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                             <p>A realm of epic porportions. Dragons, knights, kings and undead, all fight in a game of thrones.
                             </p>
                             <a id="5NomkK4EV68C" class="btn btn-primary bookLinks">See Details</a>
-                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target=#addToCart><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                             <p>Welcome to 1984. A world where Big Brother controls you, and you don't even know it.
                             </p>
                             <a id="uyr8BAAAQBAJ" class="btn btn-primary bookLinks">See Details</a>
-                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target=#addToCart><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>
@@ -213,6 +213,18 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Add To Cart -->
+    <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style: "color:green;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title success text-center" id="myModalLabel">Item Added to Cart</h4>
                 </div>
             </div>
         </div>

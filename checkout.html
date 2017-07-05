@@ -46,11 +46,6 @@
                         <a href="index.html#search">Search</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a data-toggle="modal" data-target=#cart>Cart <span class="label label-success"> 3</span></a>
-                    </li>
-                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -59,41 +54,6 @@
 
     <!-- Order Summary-->
     <div class=container>
-        <!--<div class=row>-->
-        <!--<div class=col-md-6>
-                <h3>Items</h3>
-                <hr>
-                <table class="table table-inverse">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Price</th>
-                            <th>Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Dracula</td>
-                            <td>Bram Stocker</td>
-                            <td>$4.99</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Game Of Thrones</td>
-                            <td>George RR Martin</td>
-                            <td>$12.99</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>A Brief History of Time</td>
-                            <td>Stphen Hawkings</td>
-                            <td>$4.99</td>
-                            <td>1</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>-->
         <div class=col-md-12>
             <h3 class=text-center>Order Summary</h3>
             <table class="table table-inverse">
@@ -169,7 +129,7 @@
                         </div>
                         <div class="col-md-4">
                             <label for="Email">Email:</label>
-                            <input id="Email" class="form-control input-group-lg reg_name" type="text" name="Email" title="Enter Email" placeholder="Email" />
+                            <input id="Email" class="form-control input-group-lg reg_name" type="email" name="Email" title="Enter Email" placeholder="Email" />
                         </div>
                     </div>
                 </form>
@@ -235,11 +195,39 @@
                 </div>
                 <div class=col-md-3>
                     <label for="ExpiryDate">Card Expiry Month:</label>
-                    <input id="ExpiryDate" class="form-control input-group-lg reg_name" type="number" name="ExpiryDate" title="Enter Expiry" placeholder="MM" />
-                </div>
+                    <br>
+                    <select class="form-control" name="">
+                                        <option value="">Month</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                </select> </div>
                 <div class=col-md-3>
                     <label for="ExpiryDate">Card Expiry Year:</label>
-                    <input id="ExpiryDate" class="form-control input-group-lg reg_name" type="number" name="ExpiryDate" title="Enter Expiry" placeholder="YYYY" />
+                    <br>
+                    <select class="form-control" name="">
+                                        <option value="">Year</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                </select>
                 </div>
             </div>
         </form>

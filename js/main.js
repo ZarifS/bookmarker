@@ -24,7 +24,11 @@ $(document).ready(function() {
     //Search Display in Home Page
     $("#submit").click(function() {
         var search = $('#searchForm').val();
-        getBooksBySearch(search, 10);
+        if (search == "" || search == null) {
+            alert("Please enter a search string before searching.");
+        } else {
+            getBooksBySearch(search, 10);
+        }
     });
     // $('body').on('click', '.glyphicon-shopping-cart', function() {
     //     alert("Added to Cart!");

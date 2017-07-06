@@ -93,7 +93,7 @@
             <div class=row>
                 <div class=col-md-6>
                     <h4>Shipping Options</h4>
-                    <input id="checkbox1" type="checkbox" value="">
+                    <input id="checkbox1" type="checkbox" value="" checked>
                     <label for="checkbox1">+$2.75 Standard Shipping (7-8 Business Days)</label>
                     <br>
                     <input id="checkbox1" type="checkbox" value="">
@@ -108,8 +108,12 @@
         <!--</div>-->
     </div>
 
+
+
     <!-- User Information-->
     <div class=container>
+        <hr>
+        <p class=lead>Please fill in all fields.</p>
         <!--row-->
         <div class="row">
             <!-- Contact Information-->
@@ -129,7 +133,7 @@
                         </div>
                         <div class="col-md-4">
                             <label for="Email">Email:</label>
-                            <input id="Email" class="form-control input-group-lg reg_name" type="email" name="Email" title="Enter Email" placeholder="Email" />
+                            <input id="Email" class="form-control input-group-lg reg_name" type="email" name="email" title="Enter Email" placeholder="Email" />
                         </div>
                     </div>
                 </form>
@@ -145,22 +149,18 @@
                             <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Address" />
                         </div>
                         <div class=col-md-4>
-                            <label for="address">Address Line 2:</label>
-                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Optional" />
-                        </div>
-                        <div class=col-md-4>
-                            <label for="address">City:</label>
-                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="City" />
+                            <label for="city">City:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="city" title="Enter address" placeholder="City" />
                         </div>
                     </div>
                     <div class=row>
                         <div class=col-md-4>
-                            <label for="address">State/Province:</label>
-                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="State/Province" />
+                            <label for="state">State/Province:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="state" title="Enter address" placeholder="State/Province" />
                         </div>
                         <div class=col-md-4>
-                            <label for="address">Zip/Postal Code:</label>
-                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="address" title="Enter address" placeholder="Zip/Postal Code" />
+                            <label for="zip">Zip/Postal Code:</label>
+                            <input id="address" class="form-control input-group-lg reg_name" type="text" name="zip" title="Enter address" placeholder="Zip/Postal Code" />
                         </div>
                         <div class=col-md-4>
                             <label for="address">Country:</label>
@@ -180,23 +180,23 @@
 
         <!-- Payment Information-->
 
-        <form class="form-inline">
+        <form class="form-inline" name="payment_form">
             <h3>Payment Information</h3>
             <hr>
             <div class="row">
                 <div class=col-md-3>
-                    <label for="Card Number">Card Number:</label>
-                    <input id="Card Number" class="form-control input-group-lg reg_name" type="text" name="Card Number" title="Enter Card Number" placeholder="Card Number" />
+                    <label for="card">Card Number:</label>
+                    <input id="Card Number" class="form-control input-group-lg reg_name" type="text" name="card" title="Enter Card Number" placeholder="Card Number" />
                     <img style="display:inline;" src="images/cc-logos.png" height=30px width=100px>
                 </div>
                 <div class=col-md-3>
-                    <label for="CCV">CCV Number:</label>
-                    <input id="CVV" class="form-control input-group-lg reg_name" type="text" name="CVV" title="Enter CVV" placeholder="CVV" />
+                    <label for="ccv">CCV Number:</label>
+                    <input id="CcV" class="form-control input-group-lg reg_name" type="text" name="ccv" title="Enter CVV" placeholder="CVV" />
                 </div>
                 <div class=col-md-3>
-                    <label for="ExpiryDate">Card Expiry Month:</label>
+                    <label for="month">Card Expiry Month:</label>
                     <br>
-                    <select class="form-control" name="">
+                    <select class="form-control" name="month">
                                         <option value="">Month</option>
                                         <option value="01">01</option>
                                         <option value="02">02</option>
@@ -212,9 +212,9 @@
                                         <option value="12">12</option>
                                 </select> </div>
                 <div class=col-md-3>
-                    <label for="ExpiryDate">Card Expiry Year:</label>
+                    <label for="year">Card Expiry Year:</label>
                     <br>
-                    <select class="form-control" name="">
+                    <select class="form-control" name="year">
                                         <option value="">Year</option>
                                         <option value="2015">2015</option>
                                         <option value="2016">2016</option>
@@ -235,8 +235,6 @@
         <!-- Confirmation -->
         <div class=text-center id=confirmation>
             <h3><strong>Confirmation</strong></h3>
-            <hr>
-            <label class="checkbox-inline"><input type="checkbox" value="">I have verified the above information as accurate and agree to the terms and conditions of Bookmarker.</label>
             <hr>
             <div class=text-center>
                 <button type="button" class="btn btn-danger"><a href=index.html style=color:white>CANCEL</a></button>
